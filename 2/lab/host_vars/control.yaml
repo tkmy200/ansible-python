@@ -1,0 +1,21 @@
+cinder: 24
+dns: 8.8.8.8
+firewalls:
+- http
+- https
+- ntp
+gateway: 172.25.2.1
+hostname: control
+ip: 172.25.2.114
+packages:
+- httpd
+- php
+- chrony
+services:
+- httpd
+- chrony
+users:
+- comment: WebAdminUser
+  name: webadmin
+- comment: ContentUPLoadUser
+  name: upadmin
